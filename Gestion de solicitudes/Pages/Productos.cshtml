@@ -1,0 +1,83 @@
+﻿@page
+@model Gestion_de_solicitudes.Pages.ProductosModel
+@{
+    ViewData["Title"] = "Seleccione su producto";
+
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Seleccione un producto de la lista</h1>
+
+</div>
+
+<div style="width:300; height:400;"
+    onmouseover="resaltar1()"
+    onmouseout="quitar1()">
+
+    <img id="pro1" src="https://infolibros.org/wp-content/uploads/2020/12/Libros-de-base-de-datos.jpg" />
+    <p>Base de datos - Precio: $1500 <a href="Pedidos">Realizar pedido</a></p>
+
+    <p></p>
+
+</div>
+<div style="width:300; height:400;"
+    onmouseover="resaltar2()"
+    onmouseout="quitar2()">
+    <img id="pro2" src="https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/6f/be/1f/6fbe1feb-b1a0-b68c-1bc1-ace67b829351/contsched.ecikxjdd.png/1200x630wa.png" />
+    <p>Servicios de Cloud - Precio: $2500 <a href="Pedidos">Realizar pedido</a></p>
+
+    <p></p>
+
+</div>
+
+<div style="width:300; height:400;"
+    onmouseover="resaltar3()"
+    onmouseout="quitar3()">
+    <img id="pro3" src="https://www.mytaskpanel.com/wp-content/uploads/2021/06/2021-06-03.jpg" />
+    <p>Servicios inteligentes - Precio: $3000 <a href="Pedidos">Realizar pedido</a></p>
+
+    <p></p>
+
+
+
+</div>
+
+<div style="width:300; height:400;"
+    onmouseover="resaltar4()"
+    onmouseout="quitar4()">
+    <img id="pro4" src="https://crc891.com/wp-content/uploads/2021/11/vmw-hp-prod-vsphere-lightning-lab11-780x405-1.jpg" />
+    <p>Telecomunicaciones - Precio: $3500 <a href="Pedidos">Realizar pedido</a></p>
+
+    <p></p>
+
+
+
+    <script language="Javascript">
+        function resaltar1() {
+            document.getElementById("pro1").style.border = "1px solid red";
+        }
+        function quitar1() {
+            document.getElementById("pro1").style.border = "0px solid red";
+        }
+        function resaltar2() {
+            document.getElementById("pro2").style.border = "1px solid red";
+        }
+        function quitar2() {
+            document.getElementById("pro2").style.border = "0px solid red";
+        }
+        function resaltar3() {
+            document.getElementById("pro3").style.border = "1px solid red";
+        }
+        function quitar3() {
+            document.getElementById("pro3").style.border = "0px solid red";
+        }
+        function resaltar4() {
+            document.getElementById("pro4").style.border = "1px solid red";
+        }
+        function quitar4() {
+            document.getElementById("pro4").style.border = "0px solid red";
+        }
+
+
+    </script>
